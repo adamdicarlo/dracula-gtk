@@ -24,7 +24,7 @@ SessionManagementScreen {
 
     signal loginRequest(string username, string password)
 
-    onShowUsernamePromptChanged: {
+    function onShowUsernamePromptChanged() {
         if (!showUsernamePrompt) {
             lastUserName = ""
         }
@@ -92,7 +92,7 @@ SessionManagementScreen {
 
         Connections {
             target: sddm
-            onLoginFailed: {
+            function onLoginFailed() {
                 passwordBox.selectAll()
                 passwordBox.forceActiveFocus()
             }
