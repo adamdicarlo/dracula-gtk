@@ -4,6 +4,7 @@ import QtQuick 2.2
 import QtQuick.Layouts 1.2
 import QtQuick.Controls 2.4
 import QtQuick.Controls.Styles 1.4
+import QtQuick.Window 2.15
 
 import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.components 2.0 as PlasmaComponents
@@ -122,7 +123,7 @@ SessionManagementScreen {
         background: Rectangle {
             id: buttonBackground
             width: parent.width
-            radius: width / 2
+            radius: 1.5 * Screen.devicePixelRatio
             color: "#9B79CC"
             opacity: enabled ? 1.0 : 0.3
         }
