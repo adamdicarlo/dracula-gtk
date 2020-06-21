@@ -371,7 +371,7 @@ PlasmaCore.ColorScope {
             height: mainStack.height
             x: root.width / 2 - width / 2
             y: root.height / 2 - height / 3
-            radius: 3 * Screen.devicePixelRatio
+            radius: 2 * Screen.devicePixelRatio
             color: "#21232D"
             opacity: 0.5
             z:-1
@@ -383,7 +383,7 @@ PlasmaCore.ColorScope {
             height: footer.height + 10
             anchors.left: parent.left
             anchors.top: parent.top
-            radius: 3 * Screen.devicePixelRatio
+            radius: 2 * Screen.devicePixelRatio
             color: "#21232D"
             opacity: 0.4
             z:-1

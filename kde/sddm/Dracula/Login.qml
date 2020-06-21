@@ -123,7 +123,7 @@ SessionManagementScreen {
         background: Rectangle {
             id: buttonBackground
             width: parent.width
-            radius: 1.5 * Screen.devicePixelRatio
+            radius: 1 * Screen.devicePixelRatio
             color: "#9B79CC"
             opacity: enabled ? 1.0 : 0.3
         }

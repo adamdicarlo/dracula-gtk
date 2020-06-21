@@ -11,7 +11,7 @@ TextField {
     font.family: config.font
     background: Rectangle {
         color: "#3B3D48"
-        radius: 1.5 * Screen.devicePixelRatio
+        radius: 1 * Screen.devicePixelRatio
         width: parent.width
         opacity: 0.7
         anchors.centerIn: parent
