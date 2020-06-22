@@ -250,8 +250,10 @@ PlasmaCore.ColorScope {
                     SequentialAnimation {
                         ScriptAction {
                             script: {
-                                inputPanel.item.activated = true;
-                                Qt.inputMethod.show();
+                                if (inputPanel.item) {
+                                    inputPanel.item.activated = true;
+                                    Qt.inputMethod.show();
+                                }
                             }
                         }
                         ParallelAnimation {
@@ -408,7 +410,7 @@ PlasmaCore.ColorScope {
                 text: i18ndc("plasma_lookandfeel_org.kde.lookandfeel", "Button to show/hide virtual keyboard", "Virtual Keyboard")
                 iconName: inputPanel.keyboardActive ? "input-keyboard-virtual-on" : "input-keyboard-virtual-off"
                 onClicked: inputPanel.showHide()
-                visible: true
+                visible: inputPanel.item != null
             }
 
             KeyboardButton {
